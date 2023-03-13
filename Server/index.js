@@ -4,9 +4,11 @@ var cors = require("cors");
 var morgan = require("morgan");
 var monk = require("monk");
 
+ 
 var app = express();
 
 var db = monk("127.0.0.1/twitter");
+
 
 var tweets = db.get("tweets");
 
